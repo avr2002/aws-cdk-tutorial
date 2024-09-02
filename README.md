@@ -1,3 +1,45 @@
+# AWS CDK Crash Course by `Be a Better Dev`
+
+- <a href="https://youtu.be/D4Asp5g4fp8?si=Iq9LO8qQR2pJzoVq" target="_blank"><b>🔗 Video Link</b></a>
+- <a href="https://docs.aws.amazon.com/cdk/v2/guide/home.html" target="_blank"><b>🔗 AWS CDK Docs</b></a>
+
+
+## Commands:
+
+```bash
+# Install aws-cdk cli: https://docs.aws.amazon.com/cdk/v2/guide/cli.html
+npm install -g aws-cdk
+
+# Check the version if installed correctly
+cdk --version
+
+# Configure AWS CLI
+aws configure sso --profile <profile-name>
+# OR
+aws sso login --profile <profile-name>
+
+# To initialize a new CDK project
+cdk init app --language python
+
+# To install the required dependencies: Install `aws-cdk-lib`
+pip install -r requirements.txt
+
+# Prepare an AWS environment for CDK deployments: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-bootstrap.html
+cdk bootstrap --profile <profile-name>
+
+# Synthesize the CloudFormation template
+cdk synth
+
+# Deploy the stack
+cdk deploy --profile <profile-name>
+
+# Continuously watch a project for changes to perform deployments and hotswaps.
+cdk watch
+
+# Destroy the stack
+cdk destroy --profile <profile-name>
+```
+
 
 # Welcome to your CDK Python project!
 
